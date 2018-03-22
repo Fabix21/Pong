@@ -13,21 +13,39 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Pliki nagłówkowe\Core">
+      <UniqueIdentifier>{5166a8c3-1a21-4a86-bb2f-4c7167bbd244}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\States">
+      <UniqueIdentifier>{b9a30c3a-06b5-418d-aedd-6dd118abbe17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\States">
+      <UniqueIdentifier>{33534ed8-f83a-4434-b7cb-c4a4d401ee80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Core">
+      <UniqueIdentifier>{25c14502-a206-4e41-9a05-584a5829562d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
+    <ClCompile Include="main_game.cpp">
+      <Filter>Pliki źródłowe\States</Filter>
+    </ClCompile>
     <ClCompile Include="main_menu.cpp">
-      <Filter>Pliki źródłowe</Filter>
+      <Filter>Pliki źródłowe\States</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="game_state.h">
-      <Filter>Pliki nagłówkowe</Filter>
+    <ClInclude Include="main_game.h">
+      <Filter>Pliki nagłówkowe\Core</Filter>
     </ClInclude>
     <ClInclude Include="main_menu.h">
-      <Filter>Pliki nagłówkowe</Filter>
+      <Filter>Pliki nagłówkowe\States</Filter>
+    </ClInclude>
+    <ClInclude Include="game_state.h">
+      <Filter>Pliki nagłówkowe\States</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

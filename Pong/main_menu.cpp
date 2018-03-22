@@ -1,4 +1,5 @@
 #include "main_menu.h"
+#include "main_game.h"
 #include <iostream>
 
 void main_menu::Initialize(sf::RenderWindow *window)
@@ -45,8 +46,11 @@ void main_menu::Update(sf::RenderWindow *window)
 		switch (this->selected)
 		{
 		case 0:
+			std::cout << "pressed play" << std::endl;
+			coreState.SetState(new main_game());
 			break;
 		case 1:
+			std::cout << "pressed quit" << std::endl;
 			quitGame = true;
 			break;
 
@@ -80,5 +84,7 @@ void main_menu::Destory(sf::RenderWindow *window)
 {
 	delete this->font;
 	delete this->title;
+	delete this->play;
+	delete this->quit;
 	std::cout << "destoyed" << std::endl;
 }

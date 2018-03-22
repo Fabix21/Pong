@@ -1,0 +1,29 @@
+#pragma once
+
+#include "game_state.h"
+#include "main_menu.h"
+
+#pragma once
+
+#include "game_state.h"
+
+class main_game : public tiny_state
+{
+public:
+
+	void Initialize(sf::RenderWindow *window);
+	void Update(sf::RenderWindow *window);
+	void Render(sf::RenderWindow *window);
+	void Destory(sf::RenderWindow *window);
+
+
+
+private:
+	sf::Font* font;
+	sf::Text* title;
+	sf::Text* play;
+	sf::Text* quit;
+	int selected;
+	bool upKey;
+	bool downKey;
+};
