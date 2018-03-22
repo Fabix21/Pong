@@ -10,8 +10,8 @@ int main()
 {
 
 
-	sf::RenderWindow window(sf::VideoMode(1200, 720), "Pong");
-	window.setFramerateLimit(240);
+	sf::RenderWindow window(sf::VideoMode(1280, 720), "Pong");
+	window.setFramerateLimit(480);
 
 	coreState.SetWindow(&window);
 	coreState.SetState(new main_menu());

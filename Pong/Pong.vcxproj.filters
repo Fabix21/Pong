@@ -28,6 +28,9 @@
     <Filter Include="Pliki nagłówkowe\Entities">
       <UniqueIdentifier>{4583b7ab-9e98-4d0a-8db4-88f55c650e95}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Pliki źródłowe\Entities">
+      <UniqueIdentifier>{f1980306-d504-4318-a201-965e98b70630}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -38,6 +41,15 @@
     </ClCompile>
     <ClCompile Include="main_menu.cpp">
       <Filter>Pliki źródłowe\States</Filter>
+    </ClCompile>
+    <ClCompile Include="paddle_player.cpp">
+      <Filter>Pliki źródłowe\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="ball.cpp">
+      <Filter>Pliki źródłowe\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="score.cpp">
+      <Filter>Pliki źródłowe\Entities</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -54,6 +66,12 @@
       <Filter>Pliki nagłówkowe\Core</Filter>
     </ClInclude>
     <ClInclude Include="paddle_player.h">
+      <Filter>Pliki nagłówkowe\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="ball.h">
+      <Filter>Pliki nagłówkowe\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="score.h">
       <Filter>Pliki nagłówkowe\Entities</Filter>
     </ClInclude>
   </ItemGroup>
