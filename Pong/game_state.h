@@ -73,3 +73,4 @@ private:
 };
 
 extern game_state coreState;
+extern bool quitGame;
