@@ -1,3 +1,4 @@
+#include <Windows.h>
 #include "game_state.h"
 #include "main_menu.h"
 #include <iostream>
@@ -10,6 +11,7 @@ int main()
 
 
 	sf::RenderWindow window(sf::VideoMode(1200, 720), "Pong");
+	window.setFramerateLimit(240);
 
 	coreState.SetWindow(&window);
 	coreState.SetState(new main_menu());
@@ -34,6 +36,7 @@ int main()
 		{
 			window.close();
 		}
+		//Sleep(5);
 	}
 
 

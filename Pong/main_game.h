@@ -1,11 +1,9 @@
 #pragma once
 
 #include "game_state.h"
-#include "main_menu.h"
+#include "paddle_player.h"
 
-#pragma once
 
-#include "game_state.h"
 
 class main_game : public tiny_state
 {
@@ -17,13 +15,9 @@ public:
 	void Destory(sf::RenderWindow *window);
 
 
-
 private:
-	sf::Font* font;
-	sf::Text* title;
-	sf::Text* play;
-	sf::Text* quit;
-	int selected;
-	bool upKey;
-	bool downKey;
+	paddle_player* player1;
+	paddle_player* player2;
+
+	
 };

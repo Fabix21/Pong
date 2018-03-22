@@ -25,6 +25,9 @@
     <Filter Include="Pliki źródłowe\Core">
       <UniqueIdentifier>{25c14502-a206-4e41-9a05-584a5829562d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Pliki nagłówkowe\Entities">
+      <UniqueIdentifier>{4583b7ab-9e98-4d0a-8db4-88f55c650e95}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -46,6 +49,12 @@
     </ClInclude>
     <ClInclude Include="game_state.h">
       <Filter>Pliki nagłówkowe\States</Filter>
+    </ClInclude>
+    <ClInclude Include="entity.h">
+      <Filter>Pliki nagłówkowe\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="paddle_player.h">
+      <Filter>Pliki nagłówkowe\Entities</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
