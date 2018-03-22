@@ -1,10 +1,16 @@
-#include <SFML/Graphics.hpp>
+#include "game_state.h"
+#include "main_menu.h"
+#include <iostream>
+game_state coreState;
 
 int main()
 {
-	sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-	sf::CircleShape shape(100.f);
-	shape.setFillColor(sf::Color::Green);
+
+
+	sf::RenderWindow window(sf::VideoMode(800, 600), "Pong");
+
+	coreState.SetWindow(&window);
+	coreState.SetState(new main_menu());
 
 	while (window.isOpen())
 	{
@@ -14,11 +20,14 @@ int main()
 			if (event.type == sf::Event::Closed)
 				window.close();
 		}
+		window.clear(sf::Color::Black);
 
-		window.clear();
-		window.draw(shape);
+		coreState.Update();
+		coreState.Render();
+
 		window.display();
 	}
+
 
 	return 0;
 }
